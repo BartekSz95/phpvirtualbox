@@ -5664,7 +5664,7 @@ class vboxconnector {
 
 		// Attempt to UTF-8 encode string or json_encode may choke
 		// and return an empty string
-		if(function_exists('utf8_encode'))
+		if(function_exists('iconv'))
 			return iconv("ISO-8859-1", "UTF-8", $log);
 
 		return $log;
