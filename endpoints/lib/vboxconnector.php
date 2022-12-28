@@ -10,6 +10,7 @@
  *
  */
 
+#[AllowDynamicProperties]
 class vboxconnector {
 
 	/**
