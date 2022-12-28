@@ -1359,7 +1359,7 @@ class vboxconnector {
 			$src = $nsrc->machine;
 		}
 		/* @var $m IMachine */
-		$m = $this->vbox->createMachine($this->vbox->composeMachineFilename($args['name'],null,null,null),$args['name'],null,null,null,false);
+		$m = $this->vbox->createMachine($this->vbox->composeMachineFilename($args['name'],null,null,null),$args['name'],null,null,null,null,null,null);
 		$sfpath = $m->settingsFilePath;
 
 		/* @var $cm CloneMode */
@@ -2352,7 +2352,7 @@ class vboxconnector {
 
 
 		/* @var $m IMachine */
-		$m = $this->vbox->openMachine($args['file']);
+		$m = $this->vbox->openMachine($args['file'],null);
 		$this->vbox->registerMachine($m->handle);
 
 		$m->releaseRemote();
