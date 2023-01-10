@@ -4401,13 +4401,13 @@ class vboxconnector {
 
 	    foreach($args['passwords'] as $creds) {
 	        try {
-	            $this->session->console->removeDiskEncryptionPassword($creds['id']);
+	            $this->session->console->removeEncryptionPassword($creds['id']);
 	        } catch(Exception $e) {
 	            // It may not exist yet
 	        }
 
     	    try {
-    	        $this->session->console->addDiskEncryptionPassword($creds['id'], $creds['password'], (bool)@$args['clearOnSuspend']);
+    	        $this->session->console->addEncryptionPassword($creds['id'], $creds['password'], (bool)@$args['clearOnSuspend']);
     	        $response['accepted'][] = $creds['id'];
     		} catch (Exception $e) {
     		    $response['failed'][] = $creds['id'];
@@ -4905,6 +4905,7 @@ class vboxconnector {
 	    $m = $this->vbox->openMedium($args['medium'], 'HardDisk', 'ReadWrite', false);
 
 	    /* @var $progress IProgress */
+		if(empty($args['password'])) { $args['password'] = ""; $args['id'] = ""; }
 	    $progress = $m->changeEncryption($args['old_password'],
 	            $args['cipher'], $args['password'], $args['id']);
 
