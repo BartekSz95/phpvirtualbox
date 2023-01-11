@@ -4905,7 +4905,7 @@ class vboxconnector {
 	    $m = $this->vbox->openMedium($args['medium'], 'HardDisk', 'ReadWrite', false);
 
 	    /* @var $progress IProgress */
-		if(empty($args['password'])) { $args['password'] = ""; $args['id'] = ""; }
+	    if(empty($args['password'])) $args['id'] = "";
 	    $progress = $m->changeEncryption($args['old_password'],
 	            $args['cipher'], $args['password'], $args['id']);
 
