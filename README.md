@@ -36,7 +36,7 @@ Read the wiki for more information : https://github.com/phpvirtualbox/phpvirtual
 
 # Post installation
 
-Default login is: (**username**/**password**) *admin*/*admin*
+Default login is (**username**/**password**): *admin*/*admin*
 
 Please report bugs/feature requests to GitHub:
 https://github.com/BartekSz95/phpvirtualbox/issues
