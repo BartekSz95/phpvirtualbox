@@ -23,7 +23,6 @@ possession.
 Installed PHP in version 8.2 or 8.1.
 
 See supported PHP version by developers: https://www.php.net/supported-versions.php.
-
 **Older versions are not considered.**
 
 # Installation from ZIP file
