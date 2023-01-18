@@ -23,6 +23,7 @@ possession.
 Installed PHP in version 8.2 or 8.1.
 
 See supported PHP version by developers: https://www.php.net/supported-versions.php.
+
 **Older versions are not considered.**
 
 # Installation from ZIP file
@@ -35,11 +36,9 @@ Read the wiki for more information : https://github.com/phpvirtualbox/phpvirtual
 
 # Post installation
 
-Default login is:
-username: admin
-password: admin
+Default login is: (**username**/**password**) *admin*/*admin*
 
-Please report bugs / feature requests to GitHub:
+Please report bugs/feature requests to GitHub:
 https://github.com/BartekSz95/phpvirtualbox/issues
 
 # Password Recovery
