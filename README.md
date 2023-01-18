@@ -20,7 +20,7 @@ possession.
 
 # Requirements
 
-Installed PHP in version 8.2 or 8.1.
+PHP 8.2 or 8.1.
 
 See supported PHP version by developers: https://www.php.net/supported-versions.php.
 
