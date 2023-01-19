@@ -2,7 +2,7 @@
 
 This repository is a continuation of phpVirtualBox, which is no longer supported by the official authors (last commit on thier repository was sent on Jan 27, 2021 - written on Jan 18, 2023).
 
-Right now, this software is updated by *[Bartek Sz.](https://github.com/BartekSz95)* and various contributors (see https://github.com/BartekSz95/phpvirtualbox/graphs/contributors).
+Right now (from 2022), this software is updated by *[Bartek Sz.](https://github.com/BartekSz95)* and various contributors (see https://github.com/BartekSz95/phpvirtualbox/graphs/contributors).
 
 phpVirtualBox was from 2017 to 2021 maintained by Smart Guide Pty Ltd (tudor at smartguide dot com dot au) with support from various contributors.
 
@@ -20,7 +20,10 @@ possession.
 
 # Requirements
 
-PHP 8.2 or 8.1.
+- PHP
+    - ``>= 8.1``
+
+- A webserver (eg. Apache HTTPD, nginx)
 
 See supported PHP version by developers: https://www.php.net/supported-versions.php.
 
