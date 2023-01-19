@@ -23,7 +23,7 @@ possession.
 - PHP
     - ``>= 8.1``
 
-- A webserver (eg. Apache HTTPD, nginx)
+- Webserver (eg. Apache HTTPD, nginx)
 
 See supported PHP version by developers: https://www.php.net/supported-versions.php.
 
